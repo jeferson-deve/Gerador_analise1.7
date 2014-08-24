@@ -1,4 +1,4 @@
-__author__ = 'Hunter'
+__author__ = 'Jeferson de Souza'
 
 
 #Arquivos de funçoes predifinidas.
