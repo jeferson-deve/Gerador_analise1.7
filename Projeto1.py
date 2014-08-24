@@ -175,7 +175,7 @@ def calculo_carbonato(nome, arquivar_op=0):
 if __name__ == '__main__':
     print('-----------------------------------')
     print('|Gerador de Calculos Ficticios.    |')
-    print('|Vers??o 1.0.1                      |')
+    print('|V -  1.0.2                        |')
     print('|Desenvolvido por: Jeferson S.     |')
     print('|Email: mp_bra_nco@hotmail.com     |')
     print('-----------------------------------')
@@ -184,7 +184,7 @@ if __name__ == '__main__':
 
     solucao = 1000
     while solucao != 0:
-        print('Escolha uma solu????????o: ')
+        print('Escolha uma OP: ')
         print('[1] - Ctf-3f')
         print('[2] - Talco')
         print('[3] - Composto')
