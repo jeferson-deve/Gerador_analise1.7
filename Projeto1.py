@@ -1,4 +1,4 @@
-__author__ = 'Jeferson de souza'
+__author__ = 'Hunter'
 
 from calculos import *
 import random
