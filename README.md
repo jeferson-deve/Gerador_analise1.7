@@ -1,4 +1,4 @@
-Gerado_ficticia
+Gerador de analises
 ===============
 
 Gerador de analises ficticias
