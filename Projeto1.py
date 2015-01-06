@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # coding=utf-8
 __author__ = 'Jeferson de Souza'
 
@@ -48,6 +49,29 @@ def salvar(file):
     except:
         return 'falha'
 
+=======
+__author__ = 'Jeferson de Souza'
+
+from calculos import *
+import random
+
+HNO3 = 58.3
+CACO3 = 99.9
+NO3 = 65.8
+
+# Fator de corre????????????????o
+SODA = 1.0751
+EDTA = 0.8
+HCL = 0.9756
+
+# Volumes dos tanques
+Acido = 2900
+Coagulante = 3900
+Composto = 0
+Talco = 2000
+file_name = 'Calculos.txt'
+
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
 
 def calculo_solucao(nome, arquivar_op=0):
     print('Calculo solido %s' % nome)
@@ -62,8 +86,13 @@ def calculo_solucao(nome, arquivar_op=0):
             placa1_a = sort_num(66.001, 101.992)
             placa1_b = sort_num(66.001, 101.992)
 
+<<<<<<< HEAD
             amostra_a = sort_num(1.500, 1.999)
             amostra_b = sort_num(1.500, 1.999)
+=======
+            amostra_a = sort_num(1.500, 2.500)
+            amostra_b = sort_num(1.500, 2.500)
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
 
             resultado_a = sort_num(parametro_dow, parametro_up)  # trocar pelo parametro
             resultado_b = sort_num(parametro_dow, parametro_up)  # trocar pelo parametro
@@ -82,8 +111,13 @@ def calculo_solucao(nome, arquivar_op=0):
         placa1_a = sort_num(66.001, 101.992)
         placa1_b = sort_num(66.001, 101.992)
 
+<<<<<<< HEAD
         amostra_a = sort_num(1.500, 1.999)
         amostra_b = sort_num(1.500, 1.999)
+=======
+        amostra_a = sort_num(1.500, 2.500)
+        amostra_b = sort_num(1.500, 2.500)
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
 
         resultado_a = sort_num(parametro_dow, parametro_up)  # trocar pelo parametro
         resultado_b = sort_num(parametro_dow, parametro_up)  # trocar pelo parametro
@@ -100,14 +134,22 @@ def calculo_solucao(nome, arquivar_op=0):
 
 
 def calculo_nitrato(nome, arquivar_op=0):
+<<<<<<< HEAD
     print('\n\n Calculo de concentracão %s' % nome)
+=======
+    print('\n\n Calculo de concentra????????o %s' % nome)
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
     parametro_no3_a = float(input('Valor Minimo: '))
     parametro_no3_b = float(input('Valor Maximo: '))
     quantidade = int(input('Quantos calculos gostaria: '))
 
     if arquivar_op == 1:
         file_tes = open(file_name, 'a+')
+<<<<<<< HEAD
         print('Calculo de concentracão %s' % nome, file=file_tes)
+=======
+        print('Calculo de concentra????????o %s' % nome, file=file_tes)
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
 
         for i in range(quantidade):
             print('NO3', file=file_tes)
@@ -128,15 +170,26 @@ def calculo_nitrato(nome, arquivar_op=0):
 
 
 def calculo_acido(nome, arquivar=0):
+<<<<<<< HEAD
     print('\n\nCalculo concentração de %s' % nome)
+=======
+    print('\n\nCalculo concentra????ao de %s' % nome)
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
     quantidade = int(input('Quantos calculos gostaria: '))
 
     if arquivar == 1:
         file_tes = open(file_name, 'a+')
+<<<<<<< HEAD
         print('Calculo concentracão de %s' % nome, file=file_tes)
         for i in range(quantidade):
             peso = sort_num(3501, 3999)
             volume = reverse_ac(sort_num(1.0, 1.4), sort_num(3500, 3999), SODA)
+=======
+        print('Calculo concentra????ao de %s' % nome, file=file_tes)
+        for i in range(quantidade):
+            peso = sort_num(3501, 4000)
+            volume = reverse_ac(sort_num(1.0, 1.4), sort_num(3500, 4100), SODA)
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
             print('|%d|' % peso, file=file_tes)
             print('|%.1f|' % volume, file=file_tes)
             print('|%.1f|' % analise_ac(volume, peso, SODA), file=file_tes)
@@ -144,8 +197,13 @@ def calculo_acido(nome, arquivar=0):
         file_tes.close()
 
     for i in range(quantidade):
+<<<<<<< HEAD
         peso = sort_num(3501, 3999)
         volume = reverse_ac(sort_num(1.0, 1.4), sort_num(3500, 3999), SODA)
+=======
+        peso = sort_num(3501, 4000)
+        volume = reverse_ac(sort_num(1.0, 1.4), sort_num(3500, 4100), SODA)
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
         print('|%d|' % peso)
         print('|%.1f|' % volume)
         print('|%.1f|' % analise_ac(volume, peso, SODA))
@@ -161,11 +219,19 @@ def calculo_carbonato(nome, arquivar_op=0):
         file_tes = open(file_name, 'a+')
         print('\n\n Calculo solido %s' % nome, file=file_tes)
         for i in range(quantidade):
+<<<<<<< HEAD
             placa1_a = sort_num(0.699, 1.990)
             placa1_b = sort_num(0.699, 1.990)
 
             amostra_a = sort_num(11.500, 11.999)
             amostra_b = sort_num(11.500, 11.999)
+=======
+            placa1_a = sort_num(0.099, 2.990)
+            placa1_b = sort_num(0.099, 2.990)
+
+            amostra_a = sort_num(12.000, 14.000)
+            amostra_b = sort_num(12.000, 14.000)
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
 
             resultado_a = sort_num(parametro_dow, parametro_up)  # trocar pelo parametro
             resultado_b = sort_num(parametro_dow, parametro_up)  # trocar pelo parametro
@@ -181,11 +247,19 @@ def calculo_carbonato(nome, arquivar_op=0):
             print('-----------------------', file=file_tes)
         file_tes.close()
     for i in range(quantidade):
+<<<<<<< HEAD
         placa1_a = sort_num(0.699, 1.990)
         placa1_b = sort_num(0.699, 1.990)
 
         amostra_a = sort_num(11.500, 11.999)
         amostra_b = sort_num(11.500, 11.999)
+=======
+        placa1_a = sort_num(0.099, 2.990)
+        placa1_b = sort_num(0.099, 2.990)
+
+        amostra_a = sort_num(12.000, 14.000)
+        amostra_b = sort_num(12.000, 14.000)
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
 
         resultado_a = sort_num(parametro_dow, parametro_up)  # trocar pelo parametro
         resultado_b = sort_num(parametro_dow, parametro_up)  # trocar pelo parametro
@@ -204,7 +278,11 @@ def calculo_carbonato(nome, arquivar_op=0):
 if __name__ == '__main__':
     print('-----------------------------------')
     print('|Gerador de Calculos Ficticios.    |')
+<<<<<<< HEAD
     print('|V -  1.7                          |')
+=======
+    print('|V -  1.0.2                        |')
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
     print('|Desenvolvido por: Jeferson S.     |')
     print('|Email: mp_bra_nco@hotmail.com     |')
     print('-----------------------------------')
@@ -213,7 +291,10 @@ if __name__ == '__main__':
 
     solucao = 1000
     while solucao != 0:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
         print('Escolha uma OP: ')
         print('[1] - Ctf-3f')
         print('[2] - Talco')
@@ -222,14 +303,20 @@ if __name__ == '__main__':
         print('[5] - Acido')
         print('[6] - Nitrato')
         print('[7] - Cabonato')
+<<<<<<< HEAD
         print('[8] - Editar Configuração') #nova função
+=======
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
         print('[0] - SAIR')
 
         solucao = int(input('Opcao: '))
         if solucao == 0:
             break
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
         salvar_op = input('Deseja Gerar um txt?  [s/n]: ')
         salvar_op = salvar_op.upper()
         op_num = 0
@@ -242,7 +329,10 @@ if __name__ == '__main__':
             print('Valor invalido, somento [S =  Sim | N = N??o]')
 
         if solucao == 1:
+<<<<<<< HEAD
             limpar_tela()
+=======
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
             nome = 'CTF-3F'
             if salvar_op == 'S':
                 calculo_solucao(nome, op_num)
@@ -250,7 +340,10 @@ if __name__ == '__main__':
                 calculo_solucao(nome, op_num)
 
         elif solucao == 2:
+<<<<<<< HEAD
             limpar_tela()
+=======
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
             nome = 'Talco'
             if salvar_op == 'S':
                 calculo_solucao(nome, op_num)
@@ -258,7 +351,10 @@ if __name__ == '__main__':
                 calculo_solucao(nome)
 
         elif solucao == 3:
+<<<<<<< HEAD
             limpar_tela()
+=======
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
             nome = 'Composto'
             if salvar_op == 'S':
                 calculo_solucao(nome, op_num)
@@ -266,7 +362,10 @@ if __name__ == '__main__':
                 calculo_solucao(nome)
 
         elif solucao == 4:
+<<<<<<< HEAD
             limpar_tela()
+=======
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
             nome = 'Polimero'
             if salvar_op == 'S':
                 calculo_solucao(nome, op_num)
@@ -274,7 +373,10 @@ if __name__ == '__main__':
                 calculo_solucao(nome)
 
         elif solucao == 5:
+<<<<<<< HEAD
             limpar_tela()
+=======
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
             nome = 'Acido'
             if salvar_op == 'S':
                 calculo_acido(nome, op_num)
@@ -282,7 +384,10 @@ if __name__ == '__main__':
                 calculo_acido(nome)
 
         elif solucao == 6:
+<<<<<<< HEAD
             limpar_tela()
+=======
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
             nome = 'Nitrato'
             if salvar_op == 'S':
                 calculo_nitrato(nome, op_num)
@@ -290,13 +395,17 @@ if __name__ == '__main__':
                 calculo_nitrato(nome)
 
         elif solucao == 7:
+<<<<<<< HEAD
             limpar_tela()
+=======
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
             nome = 'Carbonato'
             if salvar_op == 'S':
                 calculo_carbonato(nome, op_num)
             else:
                 calculo_carbonato(nome)
 
+<<<<<<< HEAD
         elif solucao == 8:
             limpar_tela()
             solucao = 100
@@ -540,5 +649,9 @@ if __name__ == '__main__':
 
         else:
             print('Valor Inválido!! \n\n')
+=======
+        else:
+            print('Valor Inv??lido!! \n\n')
+>>>>>>> 3a28b01cbb82963ba62127399bf55302360e78ba
 
 
